@@ -1,0 +1,89 @@
+a
+{
+  color: white;
+  text-decoration: none;
+}
+
+.pfp
+{
+  width: 128px;
+  border-radius: 50%;
+  margin-top: 24px;
+}
+
+h4
+{
+    margin-top: 0;
+}
+
+.names h1
+{
+    margin-bottom: 4px;
+}
+
+.names p
+{
+    margin: 0;
+    padding-bottom: 16px;
+}
+
+.usercard
+{
+    background-color: #2f3236;
+    padding-bottom: 2px;
+
+}
+
+.card-text
+{
+    padding: 24px;
+    background-color: #1e2124;
+    margin: 16px;
+}
+
+.card-text p
+{
+    margin-bottom: 24px; 
+}
+
+.usercard
+{
+    width: 600px;
+    margin: 32px auto;
+    border-radius: 4px;
+
+}
+
+.card-head
+{
+    text-align: center;
+}
+
+.card-foot
+{
+    padding-top: 16px;
+    border-top: 1px solid rgb(51, 51, 51);
+    display: flex;
+    gap: 16px;
+}
+
+.link
+{
+    font-weight: bold;
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 5px;
+    width: 50%;
+}
+
+.link:hover
+{
+    background-color: #30353a;
+
+}
+
+.link a
+{
+    display: block;
+    padding: 16px;
+
+}
