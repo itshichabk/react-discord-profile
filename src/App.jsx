@@ -1,14 +1,11 @@
 import './css/App.css'
 import UserCard from './components/UserCard'
+import { useState } from 'react';
 
 function App()
 {
+  const [user, setUser] = useState(0);
 
-  // let user = {
-  //   // displayName, username, aboutMe, dateJoined, links
-  //   //di
-
-  // };
   class User
   {
     constructor(pfp, displayName, username, aboutMe, dateJoined, links)
@@ -31,6 +28,11 @@ function App()
     }
   }
 
+  function toggleUser()
+  {
+      user === 0 ? setUser(1) : setUser(0);
+  }
+
   const hicham = new User("https://cdn.discordapp.com/avatars/332582409877061633/6196132d118d46ff2412ec1e1b589c50.webp",
                           "Hicham", 
                           "itshichabk",
@@ -47,10 +49,12 @@ function App()
                            [new Link("GitHub", "https://github.com/Archidoc142")]
                            );
 
+  const users = [hicham, antoine];
+
   return (
     <>
-      <UserCard user={hicham} />
-      <UserCard user={antoine} />
+      <UserCard user={users[user]}/>
+      <button onClick={toggleUser} className="toggleBtn">Toggle user</button>
     </>
   )
 
